@@ -10,7 +10,7 @@ class TestUtilities(unittest.TestCase):
 	def test_label2vector(self):
 		num_label = 2
 		num_classes = 3
-		self.assertEqual(label2vector(num_label, num_classes), [0, 1, 1])
+		self.assertEqual(label2vector(num_label, num_classes), [0, 0, 1])
 		
 	def test2_label2vector(self):
 		num_label = 2
