@@ -6,12 +6,12 @@ from nn import *
 
 class TestUtilities(unittest.TestCase):
 
-	'''
+	
 	def test_label2vector(self):
 		num_label = 2
 		num_classes = 3
 		self.assertEqual(label2vector(num_label, num_classes), [0, 0, 1])
-	'''
+
 	def main(self):
 		d1_0 = [1, 1, 0]
 		d2_0 = [1, 2, 0]
