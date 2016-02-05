@@ -3,5 +3,5 @@ def label2vector(num_label, num_classes):
 	zeros_list[num_label] = 1
 	return zeros_list
 	
-def foo(num_label, num_classes):
-	pass
+def multiply(weights, biases, inputs):
+	

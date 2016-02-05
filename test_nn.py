@@ -31,12 +31,14 @@ class TestUtilities(unittest.TestCase):
 		lb0_data = [d1_0, d2_0, d3_0, d4_0]
 		lb1_data = [d1_1, d2_2, d3_3, d4_4]
 		
-		for data in lb0_data:
-			print 'The label is %s' % data[-1]
 			
-		for data in lb1_data:
-			print 'The label is %s' % data[-1]
-	
+		layers = get_layers()
+		weights, biases = get_default_weights_biases(layers, num_inputs=2, num_outputs=2)
+		
+		print weights[0][0][0], weights[0][1][0], weights[0][0][1], weights[0][1][1]
+		print biases[1][0], biases[1][1]
+					
+		#[[[], []], [[], []]]
 	
 if __name__ == '__main__':
     unittest.main()
